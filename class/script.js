@@ -248,3 +248,94 @@
 // }
 // console.log(arr2);
 
+_________________________________________________________________________________________________________________________
+
+// Создать класс Shop, инстанс которого обладает полем
+// shopItems - массив объектов типа shopItem
+// У инстанса класса Shop должен быть метод setSales(discountPercent),
+// который устанавливает всем shopItem'ам isOnSale = true,
+// а также снижает цену на discountPercent процентов.
+// У инстанса также должен быть метод purchaseItem(itemName)
+// которое находит в массиве shopItems, необходимый shopItem и уменьшает его
+// количество на 1.
+// Если количество shopItem равно нулю, то нужно выбросить ошибку о том, что
+// айтемов больше нет в наличии. Обработайте эту ошибку и выведите в консоль
+// сообщение что айтем нельзя заказать тк он закончился.
+// У инстанса Shop также должно быть поле totalProfit - число (общее
+// количество заработанных денег), в которое складывается
+// цена каждого проданного айтема.
+
+// Создать класс ShopItem, инстанс которого должен обладать полями
+// itemName - название товара
+// price - цена товара (не может быть меньше нуля, используйте сеттер)
+// amount - количество товара (не может быть меньше нуля, используйте сеттер)
+// isOnSale - булево значение
+
+// Создать класс Clothes - который наследует от ShopItem
+// инстанс должен обладать дополнительными полями
+// size - строка характеризующая размер (может принимать значения только 'S', 'M', 'L', 'XL', обрабатывать
+// сеттером, иначе выбрасывать ошибку)
+// material - строка характеризующая материал
+// color - строка цвета
+// Класс Clothes, должен обладать статическим методом .changeColor(cloth, color)
+// который принимает инстанс этого класса и цвет, метод меняет инстансу цвет на color;
+
+// Создать класс TV который наследует от ShopItem
+// инстанс должен обладать дополнительными полями
+// diagonal - число
+// withSmartTV - булево значение
+// Оба поля должны быть недоступны для изменения, но доступны для чтения
+// т.е. значения этих полей устанавливаются только в конструкторе, дальше сеттерами
+// запрещаем их изменять
+
+// Создать инстанс Shop и прокинуть в него несколько инстансов TV и Clothes
+// проверить все методы на работоспособность
+
+class Shop{
+    constructor(shopItems){
+        this.shopItems = shopItems;
+        this.totalProfit = 0;
+    }
+    setSales(discountPercent){
+        
+    }
+    purchaseItem(itemName){ // noski
+        this.shopItems.find((element)=>{})
+
+        }
+    }
+}
+class ShopItem{
+    constructor(itemName, price, amount, isOnSale){
+        this.itemName = itemName;
+        this.price = price;
+        this.amount = amount;
+        this.isOnSale = false;
+    }
+}
+
+class Clothes extends ShopItem{
+    changeColor(cloth, color){
+
+    }
+}
+
+class TV extends ShopItem{
+    constructor(diagonal, withSmartTV){
+        this.diagonal = diagonal;
+        this.withSmartTV = withSmartTV;
+    }
+}
+
+
+
+
+
+const pomogiti = [{itemName: 'trusy', price: 200, amount: 4, isOnSale: false},
+{itemName: 'noski', price: 200, amount: 3, isOnSale: false},
+{itemName: 'baraban', price: 200, amount: 4, isOnSale: false},
+{itemName: 'nozh', price: 200, amount: 4, isOnSale: false},
+{itemName: 'ak-47', price: 200, amount: 4, isOnSale: false},
+{itemName: 'camel', price: 200, amount: 4, isOnSale: false}];
+
+console.log(pomogiti.find((item)=>{}));
