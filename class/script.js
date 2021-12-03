@@ -166,8 +166,12 @@
 //         this.batteryType = batteryType;
 //     }
 //     insertBattery (bat1, bat2) {
-//         this.bat1 = bat1;
-//         this.bat2 = bat2;
+        // if(bat1.type === this.batteryType){
+        //     this.bat1 = bat1;
+        // }
+        // if(bat2.type === this.batteryType){
+        //     this.bat2 = bat2;
+        // }
 //     }
 // }
 
