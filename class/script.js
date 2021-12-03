@@ -90,13 +90,13 @@
 // 		if (switchDevice) {
 // 			this.switchDevice();
 // 		}
-//         if(this.isOn === false) {
-//             console.log(`I can't call ${calName}`)
-//         } else {
-//             console.log(`calling ${calName}`)
-//         }
-//     }
-// };
+        //  if(!this.isOn) {
+        //     console.log(`I can't call ${calName}`)
+        // } else {
+        //     console.log(`calling ${calName}`)
+        // }
+    // }
+//  };
 
 // let device = new Device ();
 // device.callSmbd(`AvveN`);
